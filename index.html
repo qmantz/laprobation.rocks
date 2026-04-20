@@ -583,7 +583,7 @@
   document.getElementById('videoPrev').addEventListener('click', () => goToVideo(currentVideo - 1));
   document.getElementById('videoNext').addEventListener('click', () => goToVideo(currentVideo + 1));
   dots.forEach(dot => dot.addEventListener('click', () => goToVideo(+dot.dataset.index)));
-  document.getElementById('btn-play-0').addEventListener('click', e => { e.preventDefault(); alert('Video pr\u00f3ximamente en YouTube'); });
+  document.getElementById('btn-play-0').addEventListener('click', e => { e.preventDefault(); window.open('https://www.youtube.com/watch?v=-HSQFm9NyQo', '_blank'); });
 
   // Merch carousel
   const track = document.getElementById('carouselTrack');
